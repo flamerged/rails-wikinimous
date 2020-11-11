@@ -1,0 +1,34 @@
+// Import page-specific CSS files here.
+@import "home";
+@import "new";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.116);
+  background-color: #F4F4F4;
+  .brand-name {
+    font-size: 1.1rem;
+  }
+  a {
+    color: inherit;
+    font-size: 0.9rem;
+    padding-right: 8px;
+    &:hover {
+      text-decoration: none;
+      color: #3a3a3a
+    }
+  }
+}
+
+.container {
+  margin: 40px auto;
+
+  #title {
+    border-bottom: solid rgba(0, 0, 0, 0.192) 0.3px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+}

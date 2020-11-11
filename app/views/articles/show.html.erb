@@ -1,0 +1,7 @@
+<%= render partial: "nav" %>
+<div class="container">
+  <h1 id="title"><%= @article.title %>  <%= link_to "✏️", edit_article_path(@article) %> <%= link_to "🗑", article_path(@article), method: "delete" %></h1>
+  <p><%= @article.content %></p>
+  <%= link_to "Go back", articles_path %>
+</div>
+
